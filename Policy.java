@@ -49,49 +49,49 @@ public class Policy
    
       //getters
       /**
-         The getPolicyNumber method sets the policy number of the policy
+         The getPolicyNumber method gets the policy number of the policy
          @return The policy number of the policy
       */
       public int getPolicyNumber() { return policyNumber; }
       
       /**
-         The getAge method sets the age of the policy holder
+         The getAge method gets the age of the policy holder
          @return The age of the policy holder
       */
       public int getAge() { return age; }
       
       /**
-         The getProviderName method sets the provider name of the policy
+         The getProviderName method gets the provider name of the policy
          @return The provider name attatched of the policy
       */
       public String getProviderName() { return providerName; }
             
       /**
-         The getFirstName method sets the first name of the policy holder
+         The getFirstName method gets the first name of the policy holder
          @return The first name of the policy holder
       */
       public String getFirstName() { return firstName; }
             
       /**
-         The getLastName method sets the last name of the policy holder
+         The getLastName method gets the last name of the policy holder
          @return The last name of the policy holder
       */
       public String getLastName() { return lastName; }
             
       /**
-         The getSmokingStatus method sets smoking status the of the policy holder
+         The getSmokingStatus method gets smoking status the of the policy holder
          @return The smoking status of the policy holder
       */
       public String getSmokingStatus() { return smokingStatus; }
             
       /**
-         The getHeight method sets the height of the policy holder
+         The getHeight method gets the height of the policy holder
          @return The height of the policy holder
       */
       public float getHeight() { return height; }
             
       /**
-         The getWeight method sets the weight of the policy holder
+         The getWeight method gets the weight of the policy holder
          @return The weight of the policy holder
       */
       public float getWeight() { return weight; }
@@ -101,49 +101,49 @@ public class Policy
       //setters
       /**
          The getPolicyNumber method sets the policy number of the policy
-         @param The policy number of the policy
+         @param _policyNumber The policy number of the policy
       */
       public void getPolicyNumber(int _policyNumber) { policyNumber = _policyNumber; }
       
       /**
          The getAge method sets the age of the policy holder
-         @param The age of the policy holder
+         @param _age The age of the policy holder
       */
       public void getAge(int _age) { age = _age; }
       
       /**
          The getProviderName method sets the provider name of the policy
-         @param The provider name attatched of the policy
+         @param _providerName The provider name attatched of the policy
       */
       public void getProviderName(String _providerName) { providerName = _providerName; }
       
       /**
          The getFirstName method sets the first name of the policy holder
-         @param The first name of the policy holder
+         @param _firstName The first name of the policy holder
       */
       public void getFirstName(String _firstName) { firstName = _firstName; }
       
       /**
          The getLastName method sets the last name of the policy holder
-         @param The last name of the policy holder
+         @param _lastName The last name of the policy holder
       */
       public void getLastName(String _lastName) { lastName = _lastName; }
       
       /**
          The getSmokingStatus method sets smoking status the of the policy holder
-         @param The smoking status of the policy holder
+         @param _smokingStatus The smoking status of the policy holder
       */
       public void getSmokingStatus(String _smokingStatus) { smokingStatus = _smokingStatus; }
       
       /**
          The getHeight method sets the height of the policy holder
-         @param The height of the policy holder
+         @param _height The height of the policy holder
       */
       public void getHeight(float _height) { height = _height; }
       
       /**
          The getWeight method sets the weight of the policy holder
-         @param The weight of the policy holder
+         @param _weight The weight of the policy holder
       */
       public void getWeight(float _weight) { weight = _weight; }
       
