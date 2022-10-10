@@ -26,15 +26,15 @@ public class Policy
    /**
       Constructor accepting arguments for each field
       @param _policyNumber The policy number attatched to the account
-      @param _age The age of the account holder
       @param _providerName The name of the policy provider
       @param _firstName The first name of the account holder
       @param _lastName The last name of the account holder
+      @param _age The age of the account holder
       @param _smokingStatus The smoking status of the account holder
       @param _height The height of the account holder
       @param _weight The weight of the account holder
    */
-   public Policy(int _policyNumber, int _age, String _providerName, String _firstName, String _lastName, String _smokingStatus, float _height, float _weight)
+   public Policy(int _policyNumber, String _providerName, String _firstName, String _lastName, int _age, String _smokingStatus, float _height, float _weight)
    {
       policyNumber = _policyNumber;
       age = _age;
