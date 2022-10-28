@@ -1,9 +1,8 @@
 public class Policy
 {
    //variables
-   private int policyNumber, age;
-   private String providerName, firstName, lastName, smokingStatus;
-   private float height, weight;
+   private int policyNumber;
+   private String providerName;
 
 
    /**
@@ -12,13 +11,7 @@ public class Policy
    public Policy()
    {
       policyNumber = 0;
-      age = 0;
       providerName = "Unknown";
-      firstName = "Unknown";
-      lastName = "Unknown";
-      smokingStatus = "Unknown";
-      height = 0f;
-      weight = 0f;
    
    }
    
@@ -27,23 +20,11 @@ public class Policy
       Constructor accepting arguments for each field
       @param _policyNumber The policy number attatched to the account
       @param _providerName The name of the policy provider
-      @param _firstName The first name of the account holder
-      @param _lastName The last name of the account holder
-      @param _age The age of the account holder
-      @param _smokingStatus The smoking status of the account holder
-      @param _height The height of the account holder
-      @param _weight The weight of the account holder
    */
-   public Policy(int _policyNumber, String _providerName, String _firstName, String _lastName, int _age, String _smokingStatus, float _height, float _weight)
+   public Policy(int _policyNumber, String _providerName)
    {
       policyNumber = _policyNumber;
-      age = _age;
       providerName = _providerName;
-      firstName = _firstName;
-      lastName = _lastName;
-      smokingStatus = _smokingStatus;
-      height = _height;
-      weight = _weight;
    
    }
    
@@ -53,48 +34,12 @@ public class Policy
          @return The policy number of the policy
       */
       public int getPolicyNumber() { return policyNumber; }
-      
-      /**
-         The getAge method gets the age of the policy holder
-         @return The age of the policy holder
-      */
-      public int getAge() { return age; }
-      
+
       /**
          The getProviderName method gets the provider name of the policy
          @return The provider name attatched of the policy
       */
       public String getProviderName() { return providerName; }
-            
-      /**
-         The getFirstName method gets the first name of the policy holder
-         @return The first name of the policy holder
-      */
-      public String getFirstName() { return firstName; }
-            
-      /**
-         The getLastName method gets the last name of the policy holder
-         @return The last name of the policy holder
-      */
-      public String getLastName() { return lastName; }
-            
-      /**
-         The getSmokingStatus method gets smoking status the of the policy holder
-         @return The smoking status of the policy holder
-      */
-      public String getSmokingStatus() { return smokingStatus; }
-            
-      /**
-         The getHeight method gets the height of the policy holder
-         @return The height of the policy holder
-      */
-      public float getHeight() { return height; }
-            
-      /**
-         The getWeight method gets the weight of the policy holder
-         @return The weight of the policy holder
-      */
-      public float getWeight() { return weight; }
       
       
       //-------------------------------------------------------------------------------------------------------------------
@@ -103,62 +48,15 @@ public class Policy
          The getPolicyNumber method sets the policy number of the policy
          @param _policyNumber The policy number of the policy
       */
-      public void getPolicyNumber(int _policyNumber) { policyNumber = _policyNumber; }
-      
-      /**
-         The getAge method sets the age of the policy holder
-         @param _age The age of the policy holder
-      */
-      public void getAge(int _age) { age = _age; }
-      
-      /**
-         The getProviderName method sets the provider name of the policy
-         @param _providerName The provider name attatched of the policy
-      */
-      public void getProviderName(String _providerName) { providerName = _providerName; }
-      
-      /**
-         The getFirstName method sets the first name of the policy holder
-         @param _firstName The first name of the policy holder
-      */
-      public void getFirstName(String _firstName) { firstName = _firstName; }
-      
-      /**
-         The getLastName method sets the last name of the policy holder
-         @param _lastName The last name of the policy holder
-      */
-      public void getLastName(String _lastName) { lastName = _lastName; }
-      
-      /**
-         The getSmokingStatus method sets smoking status the of the policy holder
-         @param _smokingStatus The smoking status of the policy holder
-      */
-      public void getSmokingStatus(String _smokingStatus) { smokingStatus = _smokingStatus; }
-      
-      /**
-         The getHeight method sets the height of the policy holder
-         @param _height The height of the policy holder
-      */
-      public void getHeight(float _height) { height = _height; }
-      
-      /**
-         The getWeight method sets the weight of the policy holder
-         @param _weight The weight of the policy holder
-      */
-      public void getWeight(float _weight) { weight = _weight; }
-      
-      
+      public void setPolicyNumber(int _policyNumber) { policyNumber = _policyNumber; }
 
       /**
-         calculateBMI calculates the body mass index (BMI) of the policy holder
-         BMI is calculated as weight * 703 / height²
-         @return The calculated BMI
+         The setProviderName method sets the provider name of the policy
+         @param _providerName The provider name attatched of the policy
       */
-      public float calculateBMI()
-      {
-         return (weight * 703) / (height * height);
-      }
+      public void setProviderName(String _providerName) { providerName = _providerName; }
       
+            
       /**
          calculatePolicyPrice calculates the price of the policy based on a number of factors
          Base price is 600
