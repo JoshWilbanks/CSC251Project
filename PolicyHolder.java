@@ -1,9 +1,9 @@
 public class PolicyHolder
 {
    //variables
-   private int policyNumber;
-   private String providerName;
-
+   private int age = 0;
+   private String firstName, lastName, smokingStatus;
+   private float height, weight;
 
    /**
       No arg constructor
@@ -126,5 +126,29 @@ public class PolicyHolder
       {
          return (weight * 703) / (height * height);
       }
-      
+
+
+      /**
+         toString returns a string containing all the variables a given policy holder has
+         All of the variables:
+            age
+            firstName
+            lastName
+            smokingStatus
+            height
+            weight
+         @return The string containing all of the policy holder's variables
+      */
+      public String toString()
+      {
+         String str = "";
+         str += "Age: " + age + "\n";
+         str += "First Name: " + firstName + "\n";
+         str += "Last Name: " + lastName + "\n";
+         str += "Smoking Status: " + smokingStatus + "\n";
+         str += "Height: " + height + "\n";
+         str += "Weight: " + weight + "\n";
+         
+         return str;
+      }
 }
