@@ -76,5 +76,22 @@ public class Policy
          
          return price;
       }
+      
+      /**
+         toString returns a string containing all the variables a given policy has
+         All of the variables:
+            policyNumber;
+            providerName;
+
+         @return The string containing all of the policy's variables
+      */
+      public String toString()
+      {
+         String str = "";
+         str += "Policy Number: " + policyNumber + "\n";
+         str += "Provider Name " + providerName + "\n";
+         
+         return str;
+      }
 
 }
