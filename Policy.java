@@ -3,6 +3,7 @@ public class Policy
    //variables
    private int policyNumber;
    private String providerName;
+   private static int policyObjectsCount = 0;
 
 
    /**
@@ -12,7 +13,8 @@ public class Policy
    {
       policyNumber = 0;
       providerName = "Unknown";
-   
+      
+      policyObjectsCount++;
    }
    
    //constructor, takes in all values
@@ -25,7 +27,8 @@ public class Policy
    {
       policyNumber = _policyNumber;
       providerName = _providerName;
-   
+      
+      policyObjectsCount++;
    }
    
       //getters
