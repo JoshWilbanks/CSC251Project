@@ -22,12 +22,12 @@ public class PolicyHolder
    //constructor, takes in all values
    /**
       Constructor accepting arguments for each field
-      @param _firstName The first name of the account holder
-      @param _lastName The last name of the account holder
-      @param _age The age of the account holder
-      @param _smokingStatus The smoking status of the account holder
-      @param _height The height of the account holder
-      @param _weight The weight of the account holder
+      @param _firstName The first name of the policy holder
+      @param _lastName The last name of the policy holder
+      @param _age The age of the policy holder
+      @param _smokingStatus The smoking status of the policy holder
+      @param _height The height of the policy holder
+      @param _weight The weight of the policy holder
    */
    public PolicyHolder(String _firstName, String _lastName, int _age, String _smokingStatus, float _height, float _weight)
    {

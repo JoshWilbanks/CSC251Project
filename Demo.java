@@ -141,14 +141,7 @@ public class Demo
    */
    public static void displaySinglePolicyInfo(Policy userPolicy)
    {
-      System.out.println("\nPolicy Number: " + userPolicy.getPolicyNumber());
-      System.out.println("Provider Name: " + userPolicy.getProviderName());
-      System.out.println("First Name: " + userPolicy.getFirstName());
-      System.out.println("Last Name: " + userPolicy.getLastName());
-      System.out.println("Age: " + userPolicy.getAge());
-      System.out.println("Smoking Status: " + userPolicy.getSmokingStatus());
-      System.out.println("Height: "  + userPolicy.getHeight());
-      System.out.println("Weight: "  + userPolicy.getWeight());
+      System.out.println("\n" + userPolicy.toString());
       System.out.printf("Policy Price: $%,.2f", userPolicy.calculatePolicyPrice());
       System.out.println();
    
@@ -172,12 +165,13 @@ public class Demo
          displaySinglePolicyInfo(policies.get(i));
          
          //add to smokers counter for every policy with a smoking status of "smoker"
-         if(policies.get(i).getSmokingStatus().equals("smoker")) smokers++;
+         if(policies.get(i).policyHolder.getSmokingStatus().equals("smoker")) smokers++;
       
       }
       
       //display total count of smokers and non-smokers
       System.out.println();
+      System.out.println("There were " + policies.size() + " Policy objects created.");
       System.out.println("The number of policies with a smoker is: " + smokers);
       System.out.println("The number of policies with a non-smoker is: " + (policies.size() - smokers));
    
